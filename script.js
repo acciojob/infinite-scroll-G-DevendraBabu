@@ -1,7 +1,13 @@
 //your code here!
-let ol=document.getElementByTagName("ol");
-ol.addEventListener("scroll" , ()=>{
-	li=document.createElement("li").innerHtml="item1";
-list_items=document.getElementByTagName("ol").appendChild("li");
+let ol=document.getElementsByTagName("ol")[0];
+ol.addEventListener("scroll" , display)
+function display()
+	{
+		
+	li=document.createElement("li")
+	li.innerHTML="item6";
 	
-})
+	list_items=ol.appendChild(li);
+	list_items=ol.appendChild(li);
+	
+	}
